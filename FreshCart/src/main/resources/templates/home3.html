@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="" th:href="@{/Css/home3.css}">
+</head>
+<body>
+    <section class="header">
+      <nav class="navbar navbar-expand-lg bg-success " >
+        <div class="container-fluid">
+          <a class="navbar-brand ms-5" href="#"><img src="./download3/freshcart-logo.svg" alt="" class="mt-0">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-5 mb-2 mb-lg-0 me-5">
+              <li class="nav-item ms-4">
+                <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item ms-4 ">
+                <a class="nav-link text-white" href="Product">Product</a>
+              </li>
+              <li class="nav-item ms-4 ">
+                <a class="nav-link text-white" href="Categories">Categories</a>
+              </li>
+              <li class="nav-item ms-4 ">
+                <a class="nav-link text-white" href="profile">Profile</a>
+              </li>
+            </ul>
+            <form class="d-flex ms-auto" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success text-white" type="submit">Search</button>
+           </form>
+           <ul class="navbar-nav ms-2 mb-2 mb-lg-0 me-2">
+             <li class="nav-item  ">
+                <a class="nav-link text-white" href="create">Sign in</a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link text-white" href="#">Login</a>
+              </li>
+           </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+   
+<!-- main -->
+<section class="main mt-5">
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card shadow">
+                        <img src="./download3/slider-image-1.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay main-img ms-4">
+                            <small>exclusive offer</small>
+                            <h2 class="fs-1">Best Online Deals,<br> Free stuff</h2>
+                            <p>only on this week.. don't miss</p>
+                            <p>Start from <span class="text-danger fs-5">$5.99</span> </p>
+                            <button class="btn btn-success text-white">Get Best Deal</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card ">
+                        <img src="./download3/slider-image-2.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay main-img ms-4">
+                            <small>exclusive offer</small>
+                            <h2 class="fs-1">Chocozay wafer-,<br>rolls Deals</h2>
+                            <p>only on this week.. don't miss</p>
+                            <p>Start from <span class="text-success fs-5">$34.99</span> </p>
+                            <button class="btn btn-success text-white">Shop Deals Now</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card ">
+                        <img src="./download3/slider-image-3.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay main-img ms-4">
+                          <small>exclusive offer</small>
+                          <h2 class="fs-1">Cokoladni Kolutici<br>Lasta</h2>
+                          <p>only on this week.. don't miss</p>
+                          <p>Start from <span class="text-primary fs-5">$9.99</span> </p>
+                          <button class="btn btn-success text-white">Shop This Week Offer </button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="col-4">
+         <div class="row">
+            <div class="col mb-4">
+                <div class="card">
+                    <img src="./download3/ad-banner-1.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h4>10% cashback on <br>
+                        personal care</h4>
+                        <p class="text-dark fw-lighter">Max cashback: $12 <br>
+
+                            Code: CARE12</p>
+                            <button class="btn btn-dark">Show now</button>
+                    </div>
+                  </div>
+            </div>
+            
+         </div>
+         <div class="col">
+            <div class="card ">
+                <img src="./download3/ad-banner-2.jpg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h4>Say yes to
+                        season’s fresh</h4>
+                        <p class="text-dark fw-lighter">Refresh your day
+                            the fruity way <br>
+
+                            Code: CARE12</p>
+                            <button class="btn btn-dark">Show now</button>
+                </div>
+              </div>
+        </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- Shop Popular Categories -->
+<section class="main-2 mt-5">
+  <div class="container">
+    <h5 class="text-success">Shop Popular Categories</h5>
+    <div class="row mt-5">
+      <div class="col">
+        <a href=""><img src="./download3/dairy-bread-eggs.png" alt="" class="second_circle"></a>
+        <p class="mt-3 second_para fw-semibold">Dairy, Bread & Eggs</p>
+    </div>
+      <div class="col">
+        <a href=""><img src="./download3/fruits-vegetables.png " alt="" class="second_circle"></a>
+        <p class="mt-3 second_para fw-semibold">Fruits & Vegetables</p>
+    </div>
+      <div class="col">
+        <a href=""><img src="./download3/snack-munchies.png" alt="" class="second_circle"></a>
+        <p class="mt-3 second_para fw-semibold">Snack & Munchies</p>
+    </div>
+      <div class="col">
+        <a href=""><img src="./download3/bakery-biscuits.png" alt="" class="second_circle"></a>
+        <p class="mt-3 second_para fw-semibold">Bakery & Biscuits</p>
+    </div>
+      <div class="col">
+          <a href=""> <img src="./download3/instant-food.png" alt="" class="second_circle"></a>
+          <p class="mt-3 second_para fw-semibold ms-3">Instant Food</p>
+      </div>
+      <div class="col">
+        <a href=""><img src="./download3/tea-coffee-drinks.png" alt="" class="second_circle"></a>
+        <p class="mt-3 second_para fw-semibold">Tea, Coffee & Drinks</p>
+    </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col">
+        <a href=""><img src="./download3/cold-drinks-juices.png" alt="" class="second_circle">
+          </a>
+          <p class="mt-3 second_para fw-semibold">Cold Drinks & Juices</p>
+    </div>
+    <div class="col">
+       <a href=""><img src="./download3/chicken-meat-fish.png" alt="" class="second_circle"> </a>
+      <p class="mt-3 second_para fw-semibold">Chicken, Meat & Fish</p>
+  </div>
+  <div class="col">
+    <a href=""><img src="./download3/baby-care.png" alt="" class="second_circle"></a>
+    <p class="mt-3 second_para fw-semibold ms-3">Baby Care</p>
+</div>
+<div class="col">
+  <a href=""><img src="./download3/cleaning-essentials.png" alt="" class="second_circle"></a>
+  <p class="mt-3 second_para fw-semibold">Cleaning Essentials</p>
+</div>
+<div class="col">
+  <a href=""><img src="./download3/pet-care.png" alt="" class="second_circle"></a>
+  <p class="mt-3 second_para fw-semibold text ms-3">Pet Care</p>
+</div>
+<div class="col">
+  <a href=""><img src="./download3/atta-rice-dal.png" alt="" class="second_circle"></a>
+  <p class="mt-3 second_para fw-semibold">Atta, Rice & Dal</p>
+</div>
+    </div>
+  </div>
+</section>
+<!-- New Products -->
+<section class="main-3 mt-5">
+  <div class="container">
+    <h5 class="text-success">New Products</h5>
+    <small class="text-bg-light">New products with updated stocks</small>
+    <div class="row mt-3">
+      <div class="col">
+        <div class="card third_para">
+          <a href=""><img src="./download3/product-img-1.jpg" alt=""></a>
+          <small class="fw-normal text-dark ms-4">Snack &amp;
+            munchies</small>
+             <lead class="fw-bold text-dark ms-4 mt-1">Haldiram's Sev Bhujia</lead>
+             <small class="text-warning ms-4 mt-2"> <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+              <span class="text-muted small">4.5 (469)</span>
+            </small>
+              <div class="d-inline-flex justify-content-between">
+                <p class="ms-4 mt-2 text-dark">$18 <span class="text-decoration-line-through">$24</span> </p>
+                <p class="text-success me-5 mt-2">IN STOCK</p>
+              </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card third_para">
+          <a href=""><img src="./download3/product-img-2.jpg" alt=""></a>
+          <small class="fw-normal text-dark ms-4">Dairy, Bread &amp;
+            Eggs</small>
+             <lead class="fw-bold text-dark ms-4 mt-1">Britannia Cheese Slices</lead>
+             <small class="text-warning ms-4 mt-2"> <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <span class="text-muted small">5 (345)</span>
+            </small>
+              <div class="d-inline-flex justify-content-between">
+                <p class="ms-4 mt-2 text-dark">$25 </p>
+                <p class="text-success me-5 mt-2">IN STOCK</p>
+              </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card third_para">
+          <a href=""><img src="./download3/product-img-3.jpg" alt=""></a>
+          <small class="fw-normal text-dark ms-4">Bakery &amp;
+            biscuits</small>
+             <lead class="fw-bold text-dark ms-4 mt-1">Cadbury 5 Star chocolate</lead>
+          <small class="text-warning ms-4 mt-2"> <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <span class="text-muted small">5 (469)</span>
+          </small>
+            <div class="d-inline-flex justify-content-between">
+              <p class="ms-4 mt-2 text-dark">$32 <span class="text-decoration-line-through">$35</span> </p>
+              <p class="text-success me-5 mt-2">IN STOCK</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card third_para">
+          <a href=""><img src="./download3/product-img-4.jpg" alt=""></a>
+          <small class="fw-normal text-dark ms-4">Snack &amp;
+            munchies</small>
+             <lead class="fw-bold text-dark ms-4 mt-1">Onion Flavour Potato</lead>
+             <small class="text-warning ms-4 mt-2"> <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+              <span class="text-muted small">4.5 (439)</span>
+            </small>
+              <div class="d-inline-flex justify-content-between">
+                <p class="ms-4 mt-2 text-dark">$3 <span class="text-decoration-line-through">$5</span> </p>
+                <p class="text-success me-5 mt-2">IN STOCK</p>
+              </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card third_para">
+          <a href=""><img src="./download3/product-img-5.jpg" alt=""></a>
+          <small class="fw-normal text-dark ms-4">
+            Instant Food</small>
+             <lead class="fw-bold text-dark ms-4 mt-1">Salted Instant Popcorn</lead>
+             <small class="text-warning ms-4 mt-2"> <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+              <span class="text-muted small">4.5 (39)</span>
+            </small>
+              <div class="d-inline-flex justify-content-between">
+                <p class="ms-4 mt-2 text-dark">$13 <span class="text-decoration-line-through">$18</span> </p>
+                <p class="text-success me-5 mt-2">IN STOCK</p>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our most popular recipes -->
+<section class="recipes mt-5">
+  <div class="my-lg-14 my-8">
+    <div class="container">
+       <!-- row -->
+       <h5 class="text-success">popular recipes</h5>
+       <div class="table-responsive-xxl pb-6 pb-lg-0">
+          <div class="row flex-nowrap mt-3">
+             <div class="col">
+                <div class="card border-0 card-hover ">
+                   <a href="#" class="img-zoom"> <img src="./download3/ad-banner-4.jpg" alt="" class=" rounded"></a>
+                   <div class="position-absolute bg-dark-info w-100 bottom-0 py-3 px-4 rounded-bottom">
+                      <a href="#" class="text-white  d-flex align-items-center btn-transition">Offer
+                      <i class="feather-icon icon-chevron-right fs-5"></i></a>
+                   </div>
+                </div>
+             </div>
+             <div class="col">
+                <div class="card border-0">
+                   <a href="#" class="img-zoom"> <img src="./download3/ad-banner-5.jpg" alt="" class=" rounded"></a>
+                   <div class="position-absolute bg-dark-warning w-100 bottom-0 py-3 px-4 rounded-bottom">
+                      <a href="#" class="text-white  d-flex align-items-center btn-transition">Fresh Food &amp;
+                      Bakery
+                      <i class="feather-icon icon-chevron-right fs-5"></i></a>
+                   </div>
+                </div>
+             </div>
+             <div class="col">
+                <div class="card border-0">
+                   <a href="#" class="img-zoom"><img src="./download3/ad-banner-6.jpg" alt="" class=" rounded"></a>
+                   <div class="position-absolute bg-dark-danger w-100 bottom-0 py-3 px-4 rounded-bottom">
+                      <a href="#" class="text-white  d-flex align-items-center btn-transition">Mixed and
+                      Assorted fruits
+                      <i class="feather-icon icon-chevron-right fs-5"></i></a>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+</section>
+<!--  Locations -->
+<section class="location mt-5">
+  <div class="container">
+    <h5 class="text-success">Location</h5>
+    <div class="row mt-3">
+      <div class="col-4">
+        <div class="card third_para">
+          <div class="card-body">
+            <img src="./download3/stores-logo-1.svg" class="location_logo" alt="">
+            <h5 class="card-title mt-3">E-Grocery Super Market</h5>
+            <small class="card-text">Organic Groceries Butcher Shop<br>
+              Delivery<br>
+              Pickup available</small>
+              <div class="mt-2">
+                <!-- badge -->
+                <div class="badge text-bg-light border">7.5 mi away</div>
+                <!-- badge -->
+                <div class="badge text-bg-light border">In-store prices </div>
+             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card third_para">
+          <div class="card-body">
+            <img src="./download3/stores-logo-2.svg" class="location_logo" alt="">
+            <h5 class="card-title mt-3">DealShare Mart</h5>
+            <small class="card-text">Alcohol Groceries<br>
+              Delivery<br>
+              Pickup available</small>
+              <div class="mt-2">
+                <div class="badge text-bg-light border">7.5 mi away</div>
+             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card third_para">
+          <div class="card-body">
+            <img src="./download3/stores-logo-3.svg" class="location_logo" alt="">
+            <h5 class="card-title mt-3">DMart</h5>
+            <small class="card-text">GroceriesBakery Deli<br>
+              <span class="text-success">Delivery by 10:30pm</span><br>
+              Pickup available</small>
+              <div class="mt-2">
+                <div class="badge text-bg-light border">9.5 mi away</div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  Our most popular recipes -->
+<section class="popular_recipes mt-5">
+<div class="container">
+  <h5 class="text-success second_para">Our most popular recipes</h5>
+  <div class="row mt-4">
+    <div class="col">
+      <div class="card border-0" >
+        <div class="img-zoom">
+          <img src="./download3/blog-img-1.jpg" alt="" class="img-fluid rounded w-100">
+       </div>
+        <div class="card-body">
+          <h5 class="card-title">Spaghetti with Crispy Zucchini</h5>
+          <p>
+            Praesent vestibulum magna lacinia augue mollisvel aliquet massa posuere. Duis et mauris tortor.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-0" >
+        <div class="img-zoom">
+          <img src="./download3/blog-img-2.jpg" alt="" class="img-fluid rounded w-100">
+       </div>
+        <div class="card-body">
+          <h5 class="card-title second_para">Almond Butter Chocolate Chip Zucchini Bars</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur sit amet tincidunt ellentesque aliquet ligula in </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-0" >
+        <div class="img-zoom">
+          <img src="./download3/blog-img-3.jpg" alt="" class="img-fluid rounded w-100">
+       </div>
+        <div class="card-body">
+          <h5 class="card-title second_para">Spicy Shrimp Tacos Garlic Cilantro Lime Slaw</h5>
+          <p class="card-text">Praesent vestibulum magna lacinia augue mollisvel aliquet massa posuere. Duis et mauris tortor.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-0" >
+        <div class="img-zoom">
+          <img src="./download3/blog-img-4.jpg" alt="" class="img-fluid rounded w-100">
+       </div>
+        <div class="card-body ">
+          <h5 class="card-title second_para">Simple Homemade Tomato Soup</h5>
+          <p class="card-text">Aliquam tempus velit augue, sodales tincidunt augue ipsum primis in faucibus orci luctus et ultrices </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+</body>
+</html>

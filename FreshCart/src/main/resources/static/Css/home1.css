@@ -1,0 +1,87 @@
+.search{
+    width: 650px;
+}
+.location{
+    width: 110px;
+}
+.bi-chat-heart{
+    margin-left: 200px;
+}
+.carousel-inner{
+    border-radius: 10px;
+    width: 100%;
+}
+.card1{
+    margin:10px;
+}
+.show-img{
+    width: 635px;
+    height: 200px;
+}
+.bi-clock,.bi-gift, .bi-arrow-repeat, .bi-box{
+ font-size: 37px;
+}
+small{
+    font-size: .875em;
+}
+li{
+    list-style-type: none;
+}
+
+.para{
+    margin-bottom: 80px;
+}
+.con{
+    margin-top: 80px;
+    text-decoration: none;
+    
+}
+a:link {
+    text-decoration: none;
+}
+element.style {
+    background: url(./img/banner-deal.jpg)
+    no-repeat;
+    background-size: cover;
+    height: 470px;
+}
+
+.priv_arr{
+    position: absolute;
+    left: 1205px;
+    top: -40px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    cursor: pointer;
+    text-align: center;
+    line-height: 35px;
+}
+.next_arr{
+    position: absolute;
+    left: 1245px;
+    top: -40px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: lightgray;
+    cursor: pointer;
+    text-align: center;
+    line-height: 35px;
+   }
+
+   .next_arr:hover,.priv_arr:hover{
+    background-color: green;
+    color: wheat;
+   }
+
+   .hover1:hover{
+     z-index: 1;
+     box-shadow: 0 8px 50px rgba(0,0,0,0.2);
+     transform: scale(1.0);
+     border: 1px solid green;
+     
+   }
+   
+   

@@ -1,0 +1,57 @@
+.input-group {
+    width: 1000px;
+}
+small{
+    font-size: 875em;
+}
+.hr1{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+/* Get the FreshCart app */
+.FreshCart-app{
+    margin-top: 100px;
+   
+}
+
+.mx{
+    padding: 100px;
+}
+
+
+.hover1:hover{
+    z-index: 1;
+    box-shadow: 0 8px 50px rgba(0,0,0,0.2);
+    transform: scale(1.0);
+    border: 1px solid green;
+  }
+  .priv_arrow{
+    position: absolute;
+    left: 1205px;
+    top: -40px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    cursor: pointer;
+    text-align: center;
+    line-height: 35px;
+}
+
+.next_arrow{
+    position: absolute;
+    left: 1245px;
+    top: -40px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: lightgray;
+    cursor: pointer;
+    text-align: center;
+    line-height: 35px;
+   }
+
+   .next_arrow:hover,.priv_arrow:hover{
+    background-color: green;
+    color: wheat;
+   }

@@ -1,0 +1,30 @@
+.icon{
+    margin-left: 200px;
+}
+.main-img{
+    margin-top: 100px;
+}
+.mx-6{
+    margin-left: 200px;
+}
+.location_logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.second_circle:hover{
+    z-index: 0px;
+    box-shadow: 0px, 8px, 50px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+.second_para:hover{
+    cursor: pointer;
+    color: green;
+}
+.third_para:hover{
+    z-index: 1;
+    box-shadow: 0 8px 50px rgba(0,0,0,0.2);
+    transform: scale(1.0);
+    border: 1px solid green;
+    
+}
